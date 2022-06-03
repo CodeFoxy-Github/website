@@ -39,3 +39,7 @@ if exist %vbs% del /f /q %vbs%
 cscript //nologo %vbs%
 
 if exist %vbs% del /f /q %vbs%
+
+
+powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Desktop\Discord.lnk');$s.TargetPath='C:\Program Files (x86)\Discord\Discord.exe';$s.Save()"
+powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%AppData%\Microsoft\Windows\Start Menu\Programs\Discord.lnk');$s.TargetPath='C:\Program Files (x86)\Discord\Discord.exe';$s.Save()"
